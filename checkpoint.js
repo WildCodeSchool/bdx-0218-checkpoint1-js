@@ -4,21 +4,23 @@ console.log(bulletin);
 // Complete le bulletin
 // Your code here... :)
 bulletin = {
-  'nom de la partie': "Partie 1",
+  nom_partie: "Partie 1",
   notes: [],
   points: 0,
   eliminer: false,
   moyenne: false,
   reset: function() {
-    for (i in bulletin) {
-      delete bulletin[i];
-    }
+    this.nom_partie = "Partie 1"
+    this.notes = []
+    this.points = 0
+    this.eliminer = false
+    this.moyenne = false
     console.log('Le bulletin vient d\'être réinitialisé');
   }
 }
 
 // Ajouter 10 notes comprises entre 0 et 20
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   bulletin.notes.push(Math.round(Math.random() * 20));
 }
 
@@ -38,7 +40,7 @@ for (i of bulletin.notes) {
 
 // Modifier la propriété moyenne pour calculer la moyenne des notes.
 let total = 0;
-for (var i = 0; i < bulletin.notes.length; i++) {
+for (let i = 0; i < bulletin.notes.length; i++) {
   total += bulletin.notes[i]
 }
 let avg = total / bulletin.notes.length;
