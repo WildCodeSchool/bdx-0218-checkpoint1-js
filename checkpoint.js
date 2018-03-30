@@ -3,7 +3,15 @@ const bulletin = {
 	notes: [],
 	points: 0,
 	eliminer: false,
-	moyenne: 0
+	moyenne: false,
+	// Exercice 6 : Créer une sixième propriété nommée `reset` qui sera une fonction permettant de réinitialiser toutes les propriétés.
+	reset () {
+		this.nomPartie = 'Partie 1',
+		this.notes = [],
+		this.points = 0,
+		this.eliminer = false,
+		this.moyenne = false
+	}
 };
 
 // Exercice 2 : Ajouter 10 notes comprises entre 0 et 20, obtenues aléatoirement avec `Math.random()`, dans le tableau `notes`.
@@ -12,7 +20,7 @@ addNotes = (obj) => {
 		bulletin.notes.push(Math.round(Math.random() * 21))
 	}
 }
-addNotes(bulletin)
+addNotes(bulletin);
 
 // Exercice 3 : Modifier la propriété `points` qui sera le nombre de points sachant qu’un point est égal à une note supérieure à 10.
 addPoints = (obj) => {
@@ -22,7 +30,7 @@ addPoints = (obj) => {
 		}
 	}
 }
-addPoints(bulletin)
+addPoints(bulletin);
 
 // Exercice 4 : Modifier la propriété `eliminer` si une des notes est égale à 0.
 eliminerEtudiant = (obj) => {
@@ -33,21 +41,22 @@ eliminerEtudiant = (obj) => {
 		}
 	}
 }
-eliminerEtudiant(bulletin)
+eliminerEtudiant(bulletin);
 
 // Exercice 5 : Modifier la propriété `moyenne` pour calculer la moyenne des notes.
 calculMoyenne = (obj) => {
-	let total = 0
-	for (let i = 0; i < bulletin.notes.length; i++) {
-		total = total + bulletin.notes[i]
-	}
-	let moyenne = total / 10
+	const reducer = (accumulator, currentValue) => accumulator + currentValue
+	let calcul = bulletin.notes.reduce(reducer) / bulletin.notes.length
+	bulletin.moyenne = calcul
 }
-calculMoyenne(bulletin)
+calculMoyenne(bulletin);
 
 console.log(bulletin);
 // Complete le bulletin
 // Your code here... :)
+
+bulletin.reset();
+console.log(bulletin);
 
 // Don't touch this...
 module.export = bulletin;
