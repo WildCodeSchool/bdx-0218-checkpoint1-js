@@ -22,7 +22,7 @@ Fichier de réponse:
 
 **Questions :**
 
-1.  Comment s'appelle la branche principale de GIT par défaut ?
+1.  Comment s'appelle la branche principale de GIT par défaut ? -> e
 
 a/ default
 b/ remote
@@ -31,7 +31,7 @@ d/ main
 e/ master
 f/ dev
 
-2.  Comment changer de branche sous GIT ?
+2.  Comment changer de branche sous GIT ? -> d
 
 a/ git branche "X"
 b/ git branch "X"
@@ -39,7 +39,7 @@ c/ git checkout -b "X"
 d/ git checkout "X"
 e/ git add "X"
 
-3.  Comment puis-je récupérer un projet complet déjà présent sur un repository distant ?
+3.  Comment puis-je récupérer un projet complet déjà présent sur un repository distant ? -> a
 
 a/ git clone
 b/ git fetch
@@ -47,7 +47,7 @@ c/ git merge
 d/ git init
 e/ git add
 
-4.  Quelle est la commande pour initialiser un projet avec NPM avec le fichier package.json ?
+4.  Quelle est la commande pour initialiser un projet avec NPM avec le fichier package.json ? -> b
 
 a/ node init
 b/ npm init
@@ -56,7 +56,7 @@ d/ cd
 e/ ls
 f/ create
 
-5.  Quels sont les 3 états de fichiers traqués ("tracked") ?
+5.  Quels sont les 3 états de fichiers traqués ("tracked") ? -> c, a, d
 
 a/ Added
 b/ Updated
@@ -65,7 +65,7 @@ d/ Commited
 e/ Staged
 f/ Unmodified
 
-6.  Quels est le bon ordre d'éxécution afin de partager une version de code sur Github ?
+6.  Quels est le bon ordre d'éxécution afin de partager une version de code sur Github ? -> b
 
 a/ git commit -> git branch -> git push
 b/ git add -> git commit -> git push
@@ -73,7 +73,7 @@ c/ git commit -> git add -> git push
 d/ git push -> git commit -> git add
 e/ git checkout -> git push -> git add
 
-7.  Grâce à quelles commandes peut-on éditer un fichier ?
+7.  Grâce à quelles commandes peut-on éditer un fichier ? -> a, b, c et d
 
 a/ cat
 b/ edit
@@ -82,7 +82,7 @@ d/ vi
 e/ pwd
 f/ mkdir
 
-8.  Sous Github, à quoi sert une P.R. ?
+8.  Sous Github, à quoi sert une P.R. ? -> b, e et f
 
 a/ C'est une push request
 b/ C'est une pull request
@@ -92,7 +92,7 @@ e/ cela permet de faire de la review de code
 f/ c'est une étape de workflow
 g/ c'est dans Github
 
-9.  Sous ES6, comment accède-t-on à une propriété d'un objet ?
+9.  Sous ES6, comment accède-t-on à une propriété d'un objet ? -> a
 
 a/ objet.propriete
 b/ objet[1]
@@ -100,7 +100,7 @@ c/ objet.length
 d/ objet['propriete']
 e/ console.log(objet)
 
-10. Sous Git, comment peut-on voir les fichiers modifiés en cours dans mon répertoire de travail en local ?
+10. Sous Git, comment peut-on voir les fichiers modifiés en cours dans mon répertoire de travail en local ? -> c
 
 a/ git commit
 b/ git remote
