@@ -30,25 +30,29 @@ bulletin.notes.push(...tab);
 				{
 					for (let j=0; j <_objectVal1.length; j++)
 					{
-						_objectVal1[j] > 10  ? _objectVal2 =_objectVal2+1  : 0;
+						if(_objectVal1[j] > 10) 
+						{
+						 _objectVal2 =_objectVal2+1
+						}
 					}
 				}
 
  
 addPoints(bulletin.notes, bulletin.points)
+console.log(bulletin.points);
 
 
 				const perdu  = (_objectVal1, _objectVal2)=>
 				{
 					for (let x=0; x <_objectVal1.length; x++)
 					{
-						_objectVal1[j] = 0  ? _objectVal2 = true  : false;
+						_objectVal1[x] = 0  ? _objectVal2 = true  : false;
 					}
-					return _objectVal2
 				}
 
  
 perdu(bulletin.notes, bulletin.eliminer)
+console.log(bulletin.eliminer);
 
 
 
@@ -57,14 +61,14 @@ perdu(bulletin.notes, bulletin.eliminer)
 					let sum = 0
 					for (let y=0; y <_objectVal1.length; y++)
 					{
-						sum +=_objectVal1[j]
+						sum +=_objectVal1[y]
 					}
 					_objectVal2 = sum / _objectVal1.length
-					return _objectVal2
 				}
 
  
 avg(bulletin.notes, bulletin.moyenne)
+console.log(bulletin.moyenne);
 
 
 // Don't touch this...
