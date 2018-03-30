@@ -1,0 +1,14 @@
+{
+  "name": "checkpoint",
+  "version": "1.0.0",
+  "description": "### QCM",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/*.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2"
+  }
+}
