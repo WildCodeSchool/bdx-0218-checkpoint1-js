@@ -40,7 +40,5 @@ for(i = 0; i < bulletin.notes.length; i++){
     bulletin.moyenne += bulletin.notes[i] / bulletin.notes.length;
 };
 
-
-
-// Don't touch this...
+// Don't touch this....
 module.export = bulletin;
