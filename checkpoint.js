@@ -55,7 +55,7 @@ console.log(bulletin);
 // Complete le bulletin
 // Your code here... :)
 
-bulletin.reset();
+bulletin.reset()
 console.log(bulletin);
 
 // Don't touch this...
