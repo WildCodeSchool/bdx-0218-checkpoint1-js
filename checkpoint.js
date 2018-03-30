@@ -35,7 +35,7 @@ for (i=0; i<bulletin.notes.length; i++) {
     somme_notes += bulletin.notes[i];
 }
 
-let moyenne = somme_notes / 10;
+bulletin.moyenne = somme_notes / 10;
 
 console.log(bulletin);
 
@@ -43,7 +43,9 @@ console.log(bulletin.notes);
 
 console.log(somme_notes);
 
-console.log(moyenne);
+console.log(bulletin);
+
+console.log(bulletin.moyenne);
 
 console.log(bulletin.eliminer);
 
