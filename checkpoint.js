@@ -19,12 +19,12 @@ for (var i = 0; i < 10; i++) {
   } else if (bulletin.notes[i] == 0) {
     bulletin.eliminate = true;
   }
-}
+};
 
 bulletin.average = (bulletin.notes.reduce((x, y) => x + y, 0)/10).toFixed(2);
 
 // La fonction reset peut être appelée avec la commande bulletin.reset()
-
+bulletin.reset();
 console.log(bulletin);
 // Complete le bulletin
 // Your code here... :)
