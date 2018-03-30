@@ -51,13 +51,9 @@ class Bulletin {
 	}
 }
 
-const bulletin = new Bulletin('Partie 2');
-bulletin.addNotes(0, 20, 10);
-bulletin.addPoints();
-bulletin.isEliminate();
-bulletin.calcAverage();
-bulletin.reset();
-console.log(bulletin);
-
-// Don't touch this...
-module.export = bulletin;
+const checkpoint = new Bulletin('Partie 2');
+checkpoint.addNotes(0, 20, 10);
+checkpoint.addPoints();
+checkpoint.isEliminate();
+checkpoint.calcAverage();
+checkpoint.reset();
