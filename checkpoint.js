@@ -6,7 +6,7 @@ const bulletin = {
     moyenne : false
 };
 
-function entierAleatoire(min, max)
+const entierAleatoire = (min, max) =>
 {
  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -42,7 +42,7 @@ console.log(bulletin.eliminer);
 
 console.log(bulletin.points);
 
-function reset() {
+const reset = () => {
     bulletin.notes = [];
     bulletin.points = 0;
     bulletin.eliminer = false;
