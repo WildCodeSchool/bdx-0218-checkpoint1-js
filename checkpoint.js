@@ -4,7 +4,7 @@ const bulletin = {
 	notes: [],
 	points: 0,
 	eliminate: false,
-	average: false,
+	moyenne: false,
 	reset: function () {
 		this.partieName= "Partie 1";
 		this.notes= [];
@@ -30,12 +30,12 @@ const result = (bulletin) => {
 			bulletin.eliminer = true;
 		}
 	}
-	bulletin.average = sum / bulletin.notes.length;
+	bulletin.moyenne = sum / bulletin.notes.length;
 }
 
 result(bulletin);
 
-bulletin.reset();
+let init = bulletin.reset();
 
 // Don't touch this...
 module.export = bulletin;
