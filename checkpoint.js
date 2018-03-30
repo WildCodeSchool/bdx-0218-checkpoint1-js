@@ -6,7 +6,6 @@ const bulletin = {
 	moyenne:false
 };
 
-// console.log(bulletin);
 // Complete le bulletin
 // Your code here... :)
 const notesBull = (_arg) => {
@@ -14,17 +13,15 @@ const notesBull = (_arg) => {
 	let notes = _arg.notes;
 	let points = _arg.points;
 	let elim = _arg.eliminer;
+	
 	for (var i = 0; i < 10; i++) {
 		notes.push(Math.floor(Math.random() * 20));
 		if (notes[i] > 10){
-			points++;
+			bulletin.points++;
 		}
 		if (notes[i] == 0) {
-			elim = true;
+			bulletin.elim = true;
 		}
-		_arg.points = points;
-		_arg.eliminer = elim;
-
 	}
 	let tot = notes.reduce((a, b)=> a + b,0);
 	_arg.moyenne = (tot / 10);
