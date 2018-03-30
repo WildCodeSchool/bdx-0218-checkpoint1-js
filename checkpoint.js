@@ -57,7 +57,6 @@ bulletin.addPoints();
 bulletin.isEliminate();
 bulletin.calcAverage();
 bulletin.reset();
-console.log(bulletin);
 
 // Don't touch this...
 module.export = bulletin;
