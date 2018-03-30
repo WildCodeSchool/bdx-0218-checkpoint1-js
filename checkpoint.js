@@ -5,12 +5,11 @@ const bulletin = {
     eliminer : false,
     moyenne : false,
     reset : () => {
-        this.notes = [];
-        this.points = 0;
-        this.eliminer = false;
-        this.moyenne = false;
+        bulletin.notes = [];
+        bulletin.points = 0;
+        bulletin.eliminer = false;
+        bulletin.moyenne = false;
     }
-
 };
 
 const entierAleatoire = (min, max) =>
@@ -35,7 +34,8 @@ for (i=0; i<bulletin.notes.length; i++) {
     somme_notes += bulletin.notes[i];
 }
 
-bulletin.moyenne = somme_notes / 10;
+let moyenne = somme_notes / 10;
+
 
 console.log(bulletin);
 
@@ -43,9 +43,7 @@ console.log(bulletin.notes);
 
 console.log(somme_notes);
 
-console.log(bulletin);
-
-console.log(bulletin.moyenne);
+console.log(moyenne);
 
 console.log(bulletin.eliminer);
 
