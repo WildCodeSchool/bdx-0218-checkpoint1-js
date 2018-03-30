@@ -8,7 +8,7 @@ describe("Test All Checkpoint", () => {
   });
 
   beforeEach(function() {
-    checkpoint.init();
+    // checkpoint.init();
   });
 
   it("Test si c'est un Objet", () => {
