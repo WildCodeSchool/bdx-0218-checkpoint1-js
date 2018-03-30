@@ -5,10 +5,10 @@ const bulletin = {
     eliminer : false,
     moyenne : false,
     reset : () => {
-        bulletin.notes = [];
-        bulletin.points = 0;
-        bulletin.eliminer = false;
-        bulletin.moyenne = false;
+        this.notes = [];
+        this.points = 0;
+        this.eliminer = false;
+        this.moyenne = false;
     }
 
 };
