@@ -3,7 +3,14 @@ const bulletin = {
     notes : [],
     points : 0,
     eliminer : false,
-    moyenne : false
+    moyenne : false,
+    reset : () => {
+        bulletin.notes = [];
+        bulletin.points = 0;
+        bulletin.eliminer = false;
+        bulletin.moyenne = false;
+    }
+
 };
 
 const entierAleatoire = (min, max) =>
@@ -42,14 +49,9 @@ console.log(bulletin.eliminer);
 
 console.log(bulletin.points);
 
-const reset = () => {
-    bulletin.notes = [];
-    bulletin.points = 0;
-    bulletin.eliminer = false;
-    bulletin.moyenne = false;
-}
 
-reset();
+
+bulletin.reset();
 
 console.log(bulletin);
 
