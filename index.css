@@ -1,0 +1,28 @@
+.navbar-brand{
+    text-align: center;
+    font-size:2em;
+    margin:auto;
+}
+
+.gateaux.row{
+    margin-top: 2%;
+}
+
+.gateaux img {
+    max-width: 100%;
+    border-radius:0.3em;
+}
+
+.fancybox-slide--image{
+    background-color:lightpink;
+    opacity:0.8;
+}
+
+img.fancybox-image{
+    border-radius:0.5em;
+    box-shadow: 5px 15px 50px black;
+}
+
+fancybox-custom{
+    margin:50%;
+}
