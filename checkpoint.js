@@ -13,11 +13,10 @@ const bulletin = {
     }
 };
 
-/* N'ayant pas fait le checkpoint à l'école, je l'ai fait depuis chez moi et j'ai respecté le temps imparti.
-En revanche, ma 1ere solution (cf en dernier annoté) n'a pas marché et je ne comprend pas pourquoi. En temps normal
-j'aurais posté cette solution (qui ne fonctionne donc pas). Au delà, du temps, j'ai donc repris l'éxo de manière
-plus simple et ca marche, même si cela ne me convient pas */
-
+/* N'ayant pas fait le checkpoint à l'école, la solution que je propose a été faite en dehors des 3h données.
+Je suis resté tétu sur une solution qui ne marche pas et je ne comprends pas pourquoi. C'est pourquoi j'ai refait l'exo
+de manière plus simple comme ci dessous et qui fonctionne. Si j'avais été présent à l'école, j'aurai alors posté
+la solution toute à la fin (qui est annotée), mais qui ne fonctionne pas */
 
 
 console.log(bulletin);
@@ -50,7 +49,6 @@ for (var i = 0; i < bulletin.notes.length; i++) {
 console.log(bulletin);
 
 
-bulletin.reset()
 
 // 3
 // boucle sur le tableau pour mettre à jour la clé "éliminer" si et seulement si un 0 est dans le tableau
@@ -61,7 +59,7 @@ for (var i = 0; i < bulletin.notes.length; i++) {
 }
 //check bulletin
 console.log(bulletin);
-//_array.push(87)
+
 
 
 // 4
@@ -75,6 +73,10 @@ bulletin.moyenne = sum/bulletin.notes.length;
 //check bulletin
 console.log(bulletin);
 
+bulletin.reset();
+
+//check bulletin
+console.log(bulletin);
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -95,10 +97,10 @@ const addNote = (_array) => {
 
 
 
-
 // Fonction permettat de faire évoluer une variable, avec une condition
 // Si une valeur de mon tableau nouvellement créé est supérieur à 10, alors
 // le paramètre _nb augmente de 1.
+
 const nbPoint = (_array, _nb) => {
     for (var i = 0; i < _array.length; i++) {
         if (_array[i] > 10){
@@ -114,6 +116,7 @@ return _nb
 
 // fonction pour voir si la valeur boolenne "eliminer" doit être modifié ou non selon s'il y a
 // un 0 dans le tableau ou non
+
 const isEliminate = (_array, _bool) => {
     for (var i = 0; i < _array.length; i++) {
         if (_array[i] === 0){
@@ -124,6 +127,7 @@ const isEliminate = (_array, _bool) => {
 }
 
 // fonction calculant la moyenne
+
 const average = (_array, _bool) => {
         sum = 0;
         for (var i = 0; i < _array.length; i++) {
@@ -139,12 +143,17 @@ const average = (_array, _bool) => {
 
 addNote(bulletin.notes);
 console.log(bulletin);
+
 nbPoint(bulletin.notes, bulletin.points);
 console.log(bulletin);
+
 isEliminate(bulletin.notes, bulletin.eliminer);
 console.log(bulletin);
+
 average(bulletin.notes, bulletin.moyenne);
 console.log(bulletin);
+
+bulletin.reset();
 
 */
 // Don't touch this...
